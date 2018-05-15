@@ -1,4 +1,4 @@
-pipeline {
+ pipeline {
     agent none
     stages {
         stage('Build') {
@@ -50,7 +50,7 @@ pipeline {
                    nexusUrl: 'nexus.roundtower.io:8081',
                    groupId: 'apps',
                    version: '1.0',
-                   repository: 'rtt-snapshot',
+                   repository: 'training8-snapshot',
                    credentialsId: 'NexusDefault',
                    artifacts: [
                        [artifactId: 'add2vals',
